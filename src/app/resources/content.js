@@ -1,19 +1,19 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Ilyass",
+  lastName: "Bougati",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Fullstack Web Developper",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Africa/Casablanca", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Arabic", "French", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -29,12 +29,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/Ilyass-Bougati",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/ilyass-bougati-093a60293/",
   },
   {
     name: "X",
@@ -44,7 +44,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:i.bougati12@gmail.com",
   },
 ];
 
@@ -52,11 +52,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Fullstack Web Developper</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Ilyass, a student at <InlineCode>FSTS</InlineCode>, I create web applications
+      <br /> using <InlineCode>The Spring Framework</InlineCode> and <InlineCode>React</InlineCode>
     </>
   ),
 };
@@ -73,7 +73,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -81,9 +81,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Ilyass is a driven software engineer specializing in backend development with Spring Boot.
+         Passionate about building secure, scalable systems, he combines technical depth
+        with a focus on real-world impact.
       </>
     ),
   },
@@ -92,23 +92,21 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Impact Club",
+        timeframe: "2024 - Present",
+        role: "Backend Software Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Designed and implemented a secure RESTful API using Spring Boot and JPA, integrating role-based access control and JWT authentication to ensure seamless and protected access across 20+ endpoints for over 500 users
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Integrated Cloudinary’s SDK as a third-party solution for image storage and management, and collaborated in Agile sprints using Git and Jira while building a scalable database schema for handling posts, comments, and reactions efficiently.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/impact/impact-landing-page.png",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -116,18 +114,13 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "AWRACH",
+        timeframe: "2022",
+        role: "Digital Skills Educator",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+            Served as a Digital Skills Educator, teaching children the fundamentals of computer use, including keyboard and mouse operation, basic file management, and productivity tools such as Microsoft Office. Emphasized safe internet browsing practices and guided students in conducting effective online research, fostering digital literacy in an accessible and engaging learning environment.
+          </>
         ],
         images: [],
       },
@@ -138,12 +131,8 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Faculté des Sciences et Techniques Settat",
+        description: <>Cycle d'Ingénieur Génie Informatique</>,
       },
     ],
   },
@@ -152,31 +141,34 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Backend Development",
+        description: <>I excel in building robust backend systems using Spring Boot and Java. I focus on creating secure, scalable REST APIs that efficiently integrate with various systems.</>,
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "DevOps & Tools",
+        description: <>I streamline deployments using Docker and CI/CD pipelines, ensuring smooth software rollouts. I have deep familiarity with Git and GitHub Actions for effective version control and automation.</>,
+        images: [
+        ],
+      },
+      {
+        title: "Databases",
+        description: <>I design and manage relational databases such as PostgreSQL, MySQL, and SQLite while also working with NoSQL solutions like MongoDB. I focus on creating efficient schema designs that ensure data integrity and performance.</>,
+      },
+      {
+        title: "Frontend Development",
+        description: <>I develop simple responsive user interfaces with ReactJS and enhance designs using Bootstrap.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/projects/skills/img1.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/skills/img2.png",
             alt: "Project image",
             width: 16,
             height: 9,
